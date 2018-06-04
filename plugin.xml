@@ -63,10 +63,16 @@
          <string>$CARD_IO_CAMERA_USAGE_DESCRIPTION</string>
         </config-file>
 	    
-	<!-- ios 10+ camera usage description -->
+	<!-- ios 10+ photo library read usage description -->
         <preference name="CARD_IO_PHOTO_LIBRARY_USAGE_DESCRIPTION" default="${EXECUTABLE_NAME} Would like to use your camera to scan credit cards." />
         <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
          <string>$CARD_IO_PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
+        </config-file>
+	    
+	<!-- ios 11+ photo library write usage description -->
+        <preference name="CARD_IO_PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION" default="${EXECUTABLE_NAME} Would like to use your camera to scan credit cards." />
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+         <string>$CARD_IO_PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION</string>
         </config-file>
     </platform>
 
