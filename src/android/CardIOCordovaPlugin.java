@@ -108,6 +108,11 @@ public class CardIOCordovaPlugin extends CordovaPlugin {
         }
     }
 
+    // onRestoreStateForActivityResult
+    public void onRestoreStateForActivityResult(Bundle state, CallbackContext callbackContext) {
+        this.callbackContext = callbackContext;
+    }
+
     private JSONObject toJSONObject(CreditCard card) {
         JSONObject scanCard = new JSONObject();
         try {
