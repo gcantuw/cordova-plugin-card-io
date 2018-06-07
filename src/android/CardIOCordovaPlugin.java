@@ -88,6 +88,12 @@ public class CardIOCordovaPlugin extends CordovaPlugin {
         }
     }
 
+    // onSaveInstanceState
+    public Bundle onSaveInstanceState() {
+        Bundle state = new Bundle();
+        return state;
+    }
+
     // onActivityResult
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (REQUEST_CARD_SCAN == requestCode) {
