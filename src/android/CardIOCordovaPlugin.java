@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import android.os.Bundle;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
